@@ -1,0 +1,83 @@
+/*
+Name: Jeethesh Pallinti
+Date: 04.02.2026
+CSC 372-01
+
+Styles for the Jokebook application. Organized from general elements 
+to specific classes and IDs to ensure readability and maintainability.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Reusable classes used at least twice */
+.joke-card {
+    background: white;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.joke-setup {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.joke-delivery {
+    color: #555;
+    font-style: italic;
+    display: block;
+}
+
+.category-item {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Specific ID selectors */
+#random-joke-display {
+    min-height: 80px;
+}
+
+#category-list {
+    list-style: none;
+    padding: 0;
+}
+
+#search-controls {
+    margin-bottom: 20px;
+}
+
+#add-joke-form {
+    background: #eee;
+    padding: 20px;
+    border-radius: 8px;
+}

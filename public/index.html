@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokebook Central</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jokebook Central</h1>
+    </header>
+
+    <main>
+        <section id="random-joke-container">
+            <h2>Joke of the Moment</h2>
+            <div id="random-joke-display">
+                <p>Loading a funny joke...</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="search-section">
+            <h2>Explore Jokes</h2>
+            <div id="search-controls">
+                <input type="text" id="category-search" placeholder="Enter a category (e.g., funnyJoke)">
+                <button id="search-button">Search Category</button>
+            </div>
+            
+            <h3>Available Categories</h3>
+            <ul id="category-list">
+                </ul>
+        </section>
+
+        <hr>
+
+        <section id="joke-list-section">
+            <h2 id="current-category-title">Jokes</h2>
+            <div id="jokes-container">
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="add-joke-section">
+            <h2>Add a New Joke</h2>
+            <form id="add-joke-form">
+                <div class="form-group">
+                    <label for="new-category">Category:</label>
+                    <input type="text" id="new-category" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-setup">Setup:</label>
+                    <input type="text" id="new-setup" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-delivery">Delivery:</label>
+                    <input type="text" id="new-delivery" required>
+                </div>
+                <button type="submit" id="submit-joke">Add Joke</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
