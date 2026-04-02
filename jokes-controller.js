@@ -16,7 +16,7 @@ async function getCategories(req, res) {
     }
 }
 
-/** Gets jokes by category with optional limit */
+/** Gets jokes by category */
 async function getJokesByCategory(req, res) {
     let category = req.params.category;
     let limit = req.query.limit;
